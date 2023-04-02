@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class = "all">
+    <head>
+        <style>
+            .all
+            {
+                background-color: #73AD21;
+            }
+            .main {
+                margin: auto;
+                width: 60%;
+                border: 3px solid #73AD21;
+                background-color: #FFFFFF;
+                padding: 80px;
+            }
+            .Titlu{
+                font-size: 40px;
+                text-align: center;
+            }
+            .autori{
+                text-align: center;
+            }
+            .raspuns{
+                width: 70%;
+                font-size: 25px;
+                background-color: #FFFFFF;
+            }
+            .element{
+                font-size: 25px;
+            }
+            .cerinta{
+                font-size: 35px;
+                margin-bottom: 0px;;
+            }
+            p
+            {
+                font-size: 18px;
+            }
+
+        </style>
+
+        <title>Remote Communications</title>
+
+    </head>
+
+    <body>
+        <div class = "main">
+            <h2 class="Titlu">Remote Communications</h2>
+            <p class = "autori"> Autori : Baciu Eduard Alexandru, Puscasu Florin, Tanasă George-Andrei</p>
+            <div name = "Ex-div">
+                
+                <h2 name = "cerinta">
+                    Use Flow, Affordances, and Visual Variables 
+                </h2>
+                <p>
+                    Use Case: delivering an academic presentation.
+                    <br>
+                    For an easier explanation of the use flows, affordances and visual variables we separate the interaction with the desktop apps for Zoom and WebEx into 3 distinct stages:
+                    <br>1. Opening the meeting
+                    <br>2. Entering the meeting
+                    <br>3. Presentation 
+                </p>
+                <h3 class="raspuns">
+                    Opening the meeting
+                </h3>
+                <p>Foremost in case the user open the meeting from a link, skip to <b>Entering the meeting</b>.</p>
+                <p>Otherwise, the user opens the app and sees the next two screens for Zoom and respectively WebEx:</p>
+                <img src="./Z1.png" width="500"> 
+                <img src="./W1.png" width="500"> 
+                <p>The structure of both home pages is similar with only small differences. Both present a page with 4 buttons, a sidebar with buttons that changes the current page with additional controls to traverse the page history, a search bar a button for account options and an area that shows upcoming events.</p>
+                <p>For our use case the users would press the join button, which, for both apps, has the largest size on the page, is labeled and colored for high contrast with the background. </p>
+                <p>As a side note, it's assumed that a user is more likely to enter through a link directly into the meeting. As such the join button is the second button on the page for both applications, the first button being dedicated for creating a meeting and the third for scheduling a meeting. The fourth button is where it starts to vary in purpose WebEx has a button that bring you to the settings while Zoom has a button that opens a meeting and shares your screen. All the buttons slightly changes the color when hovered to indicate to the user that they are interactable. </p>
+                <p>Once the user press the join button a new menu appears for both apps which prompts them to input the meeting ID or link. After inputting the required information the user can enter the meeting.</p>
+                <img src="./Z2.png" width="500"> 
+                <img src="./W2.png" width="500"> 
+                <p>The Zoom menu gives the user more options before entering the meeting while WebEx has a more direct approach. Both also present a history of previous meeting credentials allowing you to quickly renter them. Zoom also gives you feedback in the form of the join button changing color to indicate that there can be an attempt at entering the meeting. WebEx doesn't give any feedback on the validity of the credentials.</p>
+                <h3 class="raspuns">
+                    Entering the meeting
+                </h3>
+                <p>Before fully entering the meeting, WebEx presents the user with an additional window. Which allows the user to quickly set our audio input and output devices, camera settings and the state of the microphone and camera.</p>
+                <img src="./W3.png" width="500"> 
+                <p>Once the user entered the meeting both apps have similar layouts with slight but important differences. Both have a central area that displays a participants screen and/or the video feeds from the other meeting participant if they have the setting active. On the bottom there is an options bar which contains buttons for a microphone control, camera control, screen share, chat, participants, live emoticon reactions and a few other app specific features. Each with an additional drop-down menu, accessible trough preassign the small arrow to the right of each button, which hold additional settings. Additionally hovering over each button give extra information and a hotkeys.</p>
+                <p>In Zoom, by default, the bottom bar becomes invisible when the user doesn't move the mouse. Allowing the user to focus on the meeting and not be distracted by other elements. While in WebEx it remains permanently on screen allowing for faster checkup on the state of the microphone and camera feed. Enhancing this is the fact that the buttons for the microphone and the camera only slightly left of the center of the screen allowing for less eye movement.</p>
+                <img src="./Z3.png" width="500"> 
+                <img src="./W4.png" width="500"> 
+                <p>The 3 buttons that are useful for our use case are the ones for the microphone, camera, and share screen. For both Zoom and WebEx the buttons for microphone and camera have red accent while turned off. And while the microphone is on it gains a fluctuating green accent within the microphone icon to indicate that the microphone is working.</p>
+                <h3 class="raspuns">
+                    Presentation 
+                </h3>
+                <p>Once the user start the presentation they can turn on the microphone, the camera, and share their screen by using the aforementioned three buttons. Afterwards for both Zoom and WebEx the user is prompted to chose which screen or application they want to share, with some additional settings. After everything has been selected the app overlaying at the top of the screen a menu bar implementing most of the controls from the bottom bar in the meeting window.</p>
+                <img src="./Z4.png" width="500"> 
+                <img src="./W5.png" width="500"> 
+                <p>You can also minimize the menus and move them around in other part of the screen as to not get in the users way. In the minimize form they provide the ability to stop the screen sharing and or change to another screen or window. The stop button being colored with a bright contrasting color. Zoom also outlines the shared area with a contrasting color to demarcate what other participants are seeing.</p>
+                <h3 class="raspuns">
+                    Improvements
+                </h3>
+                <p>Both apps have similar layouts and features with the ability to further customize the behavior and interface of both apps. As a result there is little to improve as they have already underwent multiple UI revisions over the years until they have reached this point.</p>
+            </div>
+
+            <div name = "Ex-div">
+                <h2 name = "cerinta">
+                    Visual metaphors and idioms & CLI<br>
+                </h2>
+                <h3 class="raspuns">
+                    Metaphors and idioms
+                </h3>
+                    <p>Since both Zoom and Webex are remote communication apps they have  many similarities between them (Jakob’s Law — Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.), but they also have some considerable differences. For example the applications use most of the same metaphors because they best represent the function of the buttons and are most other apps also use them making the user more familiar with them.</p>
+                    <img src=".//img1.png" width="500">
+                    <p> But they don’t use the same overall structure Webex has no home screen and has the functionalities presented above in the Meetings section of the client and doesn't make them directly accessible to a new user, while Zoom has them in the home screen as the first thing you see when opening the app.</p>
+                    <p>While in a meeting the interface is largely the same users going from an app to another of the same type having an easy time adapting to the change.</p>
+                    <img src=".//img2.png" width="500">
+                    <p>One of the bigger differences here being that WebEx offers the user a “Menu Bar” at the top with drop-down sections that offers a more experienced user quicker access to all the functionalities available compared to the normal more intuitive buttons at the bottom and Zoom has no such tools and has its functionalities placed only on the buttons.</p>
+                    <h3 class="raspuns">
+                        CLI
+                    </h3>
+                    <p>For text-only interactions the buttons can be made into intuitive commands such as :</p>
+                    <ul class="list">
+                        <li class="element">
+                            mic -m|um self|all|&lt;username&gt;-muting / unmuting  your microphone or someone else’s<br><br>
+                        </li>
+                        <li class="element">
+                            msg all|host|&lt;username&gt; &lt;text&gt;-sending a message in the meeting<br><br>
+                        </li>
+                        <li class="element">
+                            get participants<br><br>
+                        </li>
+                        <li class="element">
+                            get chatHistory<br><br>
+                        </li>
+                        <li class="element">
+                            get commands<br><br>
+                        </li>
+                        <li class="element">
+                            get emotes<br><br>
+                        </li>
+                        <li class="element">
+                            emote &lt;emotename&gt;<br><br>
+                        </li>
+
+                    
+                    </ul> 
+                    <p>And other commands available only to the host :</p>
+
+                    <ul class="list">
+                        <li class="element">
+                            msg block all|&lt;username&gt;<br><br>
+                        </li>
+                        <li class="element">
+                            kick &lt;username&gt<br><br>
+                        </li>
+                        <li class="element">
+                            admit all|&lt;username&gt;<br><br>
+                        </li>
+                    
+                    </ul> 
+            </div>
+            <div name = "Ex-div">
+                <h2 name = "cerinta">
+                    Cognitive overload in special conditions/contexts<br>
+                </h2>
+                <p>Due to the simple and intuitive structure of the applications cognitive overload doesn’t tend to be a problem to a user, but it can appear in certain situations. Mostly it can happen when there are too many people in one meeting and the participants are not divided into smaller rooms, in those cases the host can mute all participants and unmute them as they have to speak, but this is not a problem that can be solved by changing the interface.</p>
+                <p>New users can go into cognitive overload when the first try to share their screen as doing so minimizes both of the apps entirely. Zoom makes the buttons appear once you hover over a certain area of the screen. This can confuse people due to the sudden change and the lack of explanation making it harder to use even the basic functions of the app like the chat or seeing the participants. In this aspect WebEx does a better job the Zoom by giving the user the ability to minimize/maximize the utility bar at will by pressing a button and allowing the controls to always be in view, but it still does not fix the grater issues created by changing the general layout of the application.</p>
+                <img src=".//img3.png" width="500">
+                <p>This concern doesn’t exist in some apps such as Discord, that only shares your screen to the other participants without changing how you view the app.</p>
+
+            </div>
+
+            <div name = "Ex-div">
+                <h2 name = "cerinta">
+                    Multi-platform improvements
+                </h2>
+                <p>These improvements are for both Zoom and WebEx, and on both mobile and desktop platforms.</p>
+                <h3 class="raspuns">
+                    Customizable Video/Share Screen Layout
+                </h3>
+                <p>UX/UI Problem: Some users might want to organize the different video feeds in a particular way for different reasons. Curranty the user has only the option to watch one share screen at a time and to only pin one user.</p>
+                <p>Solution: We should allow the user to enable an advance mode in which they can place the video feeds either on a free form canvas or a grid based canvas, similar to a security system. The free form canvas method would allow the layer to place and size the videos on an surface, similar to cards on a table in real life. The grid based system would allow the user to place the feeds anywhere on a customizable grid having them snap in either one or multiple blocks.</p>
+                <h3 class="raspuns">
+                    Stats for nerds
+                </h3>
+                <p>UX/UI Problem: There is not enough data on why someone's meeting quality may decrease.</p>
+                <p>Solution: Allow the affected participant and/or the meeting owner to have an additional window that allows them to see relevant information to the video and audio stream similar to YouTube's Stats for Nerds feature.</p>
+                <h3 class="raspuns">
+                    Customizable Layout
+                </h3>
+                <p>UX/UI Problem: Some users may prefer to have a specific layout like having the meeting controls to the sides rather than the bottom of the window.</p>
+                <p>Solution: Allow the user to drag and drop the UI elements in different positions as well as to detach into sperate windows and to snap them back into the main window.</p>
+            </div>
+
+            <div name = "Ex-div">
+                <h2 name = "cerinta">
+                    <br>Reconsideration of empiric laws 
+                </h2>
+                <p>
+                    In the context of multi-device interaction, where a user may be using multiple devices to participate in the same meeting, these laws may need to
+                    apply reconsidered or adapted. Here are some ways this can happen: <br> <br>
+                    Fitt's Law: Fitt's Law states that the time required to move to a target is a function of the distance to the target and the size of the target.
+                    In the context of interacting with multiple devices, targets may be spread across multiple screens or devices, and the distance between them may
+                    be vary. Designers can customize Fitts Law by taking into account the distance and size of targets on different devices and ensuring they are
+                    easily accessible and distinguishable<br><br>
+
+                    Hick's Law: Hick's Law states that the time required to make a decision is a function of the number of options available.
+                    When interacting with multiple devices, the user may have multiple options to perform the same action, such as using keyboard shortcuts or touch
+                    gestures.
+                    Designers can adapt Hicks' Law by minimizing the number of options and providing a clear and consistent mapping between operations and inputs
+                    method. <br><br>
+                    Steering Law: Steering Law states that the time required to navigate a target through a path is a function of the amplitude and width of the path.
+                    In the case of interacting with multiple devices, users may need to navigate destinations and paths between them across multiple screens or devices
+                    and length and width may vary. Designers can customize Steering Law by accounting for path complexity and providing clear visual cues and
+                    feedback that guides the user through the navigation process.
+                </p>
+            </div>
+
+            <div name = "Ex-div">
+                <h2 name = "cerinta">
+                    Features that can be added to improve the experience:
+                </h2>
+                <p class="raspuns">
+                    <ul class="list">
+                        <li class="element">
+                            In the conversation with a person, there should be a button where you can set the messages you receive from them to be read and
+                            spoken audio by an TTS.<br><br>
+                        </li>
+
+                        <li class="element">Virtual Hand Raising: Zoom has a "raise hand" feature that allows participants to signal they want to speak, but it's not very prominent, and it's easy to miss. 
+                            A more visible and customizable virtual hand-raising feature would be helpful.<br><br>
+                        </li>
+
+                        <li class="element">A button to set how many voices to hear from you, if there are more voices than you have set, then it will automatically mute you. Measure against accidentally 
+                            overheard conversations on Zoom/Webex.<br><br>
+                        </li>
+                      </ul> 
+    
+                </p>
+            </div>
+            <div class = "footer">
+                <div>
+                    <h2 class = "contributii">Contributions: <br><br></h2>
+                    <h3>Puscasu Florin : <br><br> "Visual metaphors and idioms & CLI" <br> "Cognitive overload in special conditions/contexts"</h3> 
+                    <h3>Tanasă George-Andrei : <br><br> "Use Flow, Affordances, and Visual Variables" <br> "Multi-platform improvements"</h3> 
+                    <h3>Baciu Eduard Alexandru : <br><br> "Reconsideration of empiric laws" <br> "Features that can be added to improve the experience"</h3>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
